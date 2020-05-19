@@ -1,0 +1,12 @@
+\documentclass[dvipdfmx,tikz]{standalone}
+\usepackage{tikz,bm}
+\begin{document}
+\begin{tikzpicture}
+%\draw [help lines] (-4,-4) grid (4,4);
+    \draw [%fill = blue!30!white!70!
+    ] circle [x radius = 3, y radius = 2];
+\draw[->,thick] (-4,0) -- (4,0) node[anchor = west] {$q$};
+\draw[->,thick] (0,-3) -- (0,3) node[anchor = west] {$p$};
+\node[font=\large] at (3,2) {$E$};
+\end{tikzpicture}
+\end{document}
