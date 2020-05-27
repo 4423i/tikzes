@@ -3,7 +3,7 @@
 \usetikzlibrary{intersections,calc,arrows}
 \begin{document}
 \begin{tikzpicture}
-%\draw[help lines] (-3,-2) grid (3,2);
+\draw[help lines] (-3,-2) grid (3,2);
 \draw[->,>=stealth,color = red,line width=3pt]
     (-2.5,0) arc [start angle=-180, end angle=180,x radius=0.5, y radius=2];
 \draw[>=stealth,color = red,line width=3pt]
@@ -17,5 +17,10 @@
 \node (B) at (2,-0.25) {$B$};
 \draw [->,>=stealth,color = blue,thick] (-1,-0.25) -- (1,-0.25) node[midway,below] {$\bm{H}$};
 \draw[->,>=stealth,thick] (-3,0) -- (3,0) node[above] {$z$};
+
+\draw[>=stealth,thick,dashed]
+    (-2,0) arc [start angle=-90, end angle=90,x radius=0, y radius=1]node[midway,anchor=east] {$R$};
+
+\draw [->,>=stealth,color = blue,thick] (2,0) -- (2.5,1) node[anchor=west] {$\bm{e}_r$};
 \end{tikzpicture}
 \end{document}
