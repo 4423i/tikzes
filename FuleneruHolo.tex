@@ -1,0 +1,12 @@
+\documentclass[dvipdfmx,tikz]{standalone}
+\usepackage{bm}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\begin{document}
+\tdplotsetmaincoords{70}{45}
+\begin{tikzpicture}[tdplot_main_coords]
+    \tdplotdrawarc[thick,->,color=red]{(0,0,0)}{1}{345}{0}{anchor=south west,color=black}{{}};
+    \draw[thick,->] (0,0,-1.5) -- (0,0,1.5) node[anchor=north east]{$\bm{B}$};
+    \draw[thick,->] (0,0,-1.0) -- (0,-1,0) node[anchor=north east]{$\bm{m}$};
+\end{tikzpicture}
+\end{document}
